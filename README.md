@@ -9,33 +9,33 @@
 
 # Simple E-commerce Shopping Cart
 
-A small e-commerce shopping cart system built with **Laravel 11**, **Livewire**, and **Tailwind CSS**.  
-Users can browse products, add them to a cart, update quantities, remove items, and checkout.  
-Admins receive low-stock notifications and daily sales reports via email.
+This project is a simple e-commerce shopping cart application built with Laravel 11, Livewire, and Tailwind CSS.  
+It demonstrates authenticated, user-bound cart management, background jobs, and scheduled reporting using Laravel best practices..
+
+---
+##  Tech Stack
+
+- Backend: Laravel 11
+- Frontend: Livewire (via Laravel Breeze)
+- Styling: Tailwind CSS
+- Authentication: Laravel Breeze
+- Background Jobs: Laravel Queues
+- Scheduling: Laravel Task Scheduler
+- Version Control: Git / GitHub
 
 ---
 
-## Features
+##  Features
 
-- User authentication with Laravel Breeze
-- Browse products with images, description, price, and stock quantity
-- Reactive shopping cart using **Livewire**
-- Add/remove products and update quantities in real-time
-- Checkout workflow
-- Low Stock Notification (email via queued job)
-- Daily Sales Report (scheduled job)
-- Fully responsive UI with Tailwind CSS
+- User authentication (register/login)
+- Browse products
+- Add products to cart
+- Update cart item quantities
+- Remove items from cart
+- Cart is persisted per authenticated user (no sessions or local storage)
+- Low stock email notification via queued job
+- Daily sales report sent via scheduled command
 
----
-
-## Tech Stack
-
-- **Backend:** Laravel 11
-- **Frontend:** Livewire + Blade
-- **Styling:** Tailwind CSS
-- **Mail/Queue:** Laravel Jobs & Mailables
-- **Database:** MySQL / MariaDB
-- **Version Control:** Git & GitHub
 
 ---
 
