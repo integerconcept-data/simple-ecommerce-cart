@@ -1,5 +1,5 @@
 <div class="relative">
-    <a href="#"
+    <a href="{{ url('/shoppingcart') }}"
        wire:navigate
        class="text-sm text-gray-700 dark:text-gray-500 mr-2 inline-flex items-center">
 

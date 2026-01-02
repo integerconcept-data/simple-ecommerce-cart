@@ -14,8 +14,10 @@ class ProductList extends Component
         if (! auth()->check()) {
             return redirect()->route('login');
         }
+        if ($product->stock_quantity < 1) return;
 
         $cart = auth()->user()->cart()->firstOrCreate();
+        //$cart = auth()->user()->cart()->firstOrCreate([]);
 
         $cartItem = $cart->items()
             ->where('product_id', $product->id)

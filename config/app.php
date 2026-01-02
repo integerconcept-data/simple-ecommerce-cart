@@ -104,6 +104,10 @@ return [
             explode(',', env('APP_PREVIOUS_KEYS', ''))
         ),
     ],
+    /* Define Low-Stock Threshold */
+
+    'low_stock_threshold' => 5,
+
 
     /*
     |--------------------------------------------------------------------------
