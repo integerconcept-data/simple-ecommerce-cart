@@ -7,6 +7,47 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+# Simple E-commerce Shopping Cart
+
+A small e-commerce shopping cart system built with **Laravel 11**, **Livewire**, and **Tailwind CSS**.  
+Users can browse products, add them to a cart, update quantities, remove items, and checkout.  
+Admins receive low-stock notifications and daily sales reports via email.
+
+---
+
+## Features
+
+- User authentication with Laravel Breeze
+- Browse products with images, description, price, and stock quantity
+- Reactive shopping cart using **Livewire**
+- Add/remove products and update quantities in real-time
+- Checkout workflow
+- Low Stock Notification (email via queued job)
+- Daily Sales Report (scheduled job)
+- Fully responsive UI with Tailwind CSS
+
+---
+
+## Tech Stack
+
+- **Backend:** Laravel 11
+- **Frontend:** Livewire + Blade
+- **Styling:** Tailwind CSS
+- **Mail/Queue:** Laravel Jobs & Mailables
+- **Database:** MySQL / MariaDB
+- **Version Control:** Git & GitHub
+
+---
+
+## Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/integerconcept-data/simple-ecommerce-cart.git
+cd simple-ecommerce-cart
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
